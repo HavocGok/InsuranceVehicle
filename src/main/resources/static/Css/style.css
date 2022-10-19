@@ -1,0 +1,525 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.hamburger-menu
+{display: none;}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'DM Serif Display', serif;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+.nav-container
+{
+    font-family: 'Karla', sans-serif;   
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 3rem 9rem ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-responsive
+{ 
+    display: none;
+}
+.nav-container nav ul
+{
+  list-style: none;
+}
+.nav-container nav ul li
+{
+ display: inline-block;
+ font-weight: bold;
+ padding: 0 1.3rem ;
+}
+.nav-container nav ul li a:hover
+{
+  color:hsl(173, 36%, 49%) ;
+}
+
+.view-plans a
+{
+    text-transform: uppercase;
+    color: hsl(196, 90%, 34%);
+    border: 1px solid hsl(256, 26%, 20%);
+    text-align: center;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.view-plans a:hover
+{
+    -webkit-text-fill-color: white;
+    background:hsl(202, 96%, 22%) ;
+}
+.hero-section
+{
+    position: relative;
+    background:  hsl(196, 97%, 24%);
+    display: grid;
+    grid-template-columns: 10% repeat(2,1fr) 10%;
+    padding: 3rem  0;
+}
+.hero-content h1
+{
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+}
+.hero-content p
+{
+    line-height: 25px;
+    font-family: 'Karla', sans-serif;
+    padding-bottom: 20px;
+}
+.hero-content
+{
+    grid-column: 2/3;
+    padding: 6rem 0 1.5rem ;
+    color: white;
+}
+.hero-image
+{
+    position: absolute;
+    z-index: 5;
+    top: 120px;
+    left:700px;
+    width: 400px;
+    height: 430px;
+}
+.hero-button a
+{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border:1px solid white;
+    padding: 10px 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+
+}
+.hero-button a:hover
+{
+    background: white;
+    color: hsl(196, 97%, 24%);
+}
+.top-right
+{
+    position: absolute;
+    right: 50px;
+    z-index: 6;
+}
+.top-right-image
+{
+    width: 650px;
+    height: 450px;
+    
+}
+.top-left
+{
+    position: absolute;
+    left: 0;
+    top: 300px;
+    
+}
+.top-left-image
+{
+    width: 150px;
+    height: 250px;
+}
+
+.different-container{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 2;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+.we-text
+{
+    grid-row: 1;
+    grid-column: 2/3;
+    padding-bottom: 80px;
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+}
+.cards-container
+{
+    grid-row:2 ;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right:15px ;
+}
+.card-img
+{
+    padding-bottom: 25px;
+}
+.card-title
+{
+    padding-bottom: 15px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+}
+.card-text
+{
+    color: hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    line-height: 30px;
+}
+.find-out-container
+{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    color: white;
+    padding-bottom: 100px;
+}
+.find-out
+{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-between;
+    background: hsl(196, 97%, 24%);
+    padding: 40px 100px;
+    position: relative;
+}
+.find-text
+{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+}
+
+.how-we-image
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 170px;
+    z-index: 1;
+}
+.how-we-work
+{
+    z-index: 9;
+    font-weight: bold;
+    -webkit-text-fill-color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+}
+.how-we-work:hover
+{
+    background: white;
+    -webkit-text-fill-color: hsl(185, 53%, 48%);
+}
+footer
+{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 2;
+    
+}
+.footer-social
+{
+    grid-row: 1;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;   
+}
+.social-icons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icons a
+{
+    padding-right: 10px;
+}
+.footer-content
+{
+    grid-row: 2;
+    grid-column: 2/3;
+}
+.footer-content
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.col h4
+{
+    font-family: 'Karla', sans-serif;
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+    padding-top: 20px;border-top: 1px solid hsl(300, 3%, 81%);
+}
+.social-icons > a:hover
+{
+    color: black;
+    cursor: pointer;
+}
+.col-item
+{
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: hsl(196, 97%, 24%);
+    display: block;
+    padding-bottom: 10px;
+}
+.col-item:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* media queries for mobile design
+ */
+ @media only screen and (max-width:575.98px)
+ {
+      
+    .nav-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-container nav ul li:not(:last-child)
+    {
+          display: none;
+    }
+    .nav-container nav ul li a img.hamburger-menu
+    {
+            display: block;
+    }
+     
+    .nav-resposive.reponsive  ul
+    {
+        list-style: none;
+    }
+    .nav-responsive.responsive  ul li
+    {
+            list-style: none;
+            padding: 1rem;
+            text-align: center;
+            
+    }
+    .nav-responsive.responsive  ul li a
+    {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Karla', sans-serif;
+            font-size: 1.2rem;
+            color: white;
+    }
+     .nav-responsive.responsive
+     {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         padding: 2rem;
+         background: hsl(196, 97%, 24%) ;
+     }
+     .view-plans a
+    {
+        text-transform: uppercase;
+        color: hsl(196, 97%, 24%);
+        border: 1px solid white;
+        text-align: center;
+        padding: 10px 60px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    .view-plans a:hover
+    {
+        -webkit-text-fill-color: hsl(202, 96%, 22%);
+        background:white;
+        
+    }
+    .mobile-nav-img
+    {
+        padding-top: 60px;
+        width: 400px;
+        height: 290px;
+    }
+    .hero-section
+    {
+        background:  hsl(202, 96%, 22%);
+        display: flex;
+        flex-direction: column;
+    }
+    .we-text
+    {
+        text-align: center;
+    }
+    .hero-image
+    {
+    display: none;
+    }
+    .top-right
+    {
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+    }
+    .top-right-image
+    {
+        width: 250px;
+        height: 200px;
+    }
+    .top-left
+    {
+        position: absolute;
+        top: -8px;
+        left: -10px;
+    }
+    .top-left-image
+    {
+        width: 150px;
+        height: 250px;
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-content h1
+    {
+        font-size: 2.5rem;
+        font-family: 'DM Serif Display', serif;
+        text-align: center;
+    }
+    .hero-content p
+    {
+        text-align: center;
+        line-height: 25px;
+        font-family: 'Karla', sans-serif;
+        padding-bottom: 20px;
+        font-size: 0.9rem;
+        padding: 1rem 1rem 3rem 1rem;
+    }
+    .different-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .card-img
+    {
+        padding-bottom: 25px;
+    }
+    .card-title
+    {
+        padding-bottom: 15px;
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.4rem;
+    }
+    .card-text
+    {
+        color: hsl(273, 4%, 51%);
+        font-family: 'Karla', sans-serif;
+        line-height: 30px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .find-out-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .find-out
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    .find-text
+    {
+        text-align: center;
+    }
+    .how-we-work
+    {
+        margin-top: 40px;
+    }
+    .how-we-image
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 180px;
+        height: 190px;
+
+    }
+    .footer-social
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-logo
+    {
+        padding-bottom: 20px;
+    }
+    .social-icons a
+    {
+    text-align: center;
+    padding-right: 15px;
+    }
+    .footer-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-content .col
+    {
+        text-align: center;
+        padding-top: 30px;
+    }
+ }
